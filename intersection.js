@@ -5,20 +5,18 @@ const array2 = [2,2,5];
 function intersection (array1, array2) {
     const commonElements = [];
     for (let i = 0; i < array1.length; i++ ) {
-        for (let j = 0; j < array2.length; j++ ) {
-            array1[i] === array2[j] && !commonElements.includes(array1[i]) && commonElements.push(array1[i])
-        }
+        const current = array1[i];
+        array2.includes(current) && !commonElements.includes(current) && commonElements.push(current);
     }
     return commonElements;
 }
 
 // task 2
-Array.prototype.intersection = function(array2) {
+Array.prototype.intersection = function(array) {
     const commonElements = [];
     for (let i = 0; i < this.length; i++ ) {
-        for (let j = 0; j < array2.length; j++ ) {
-            this[i] === array2[j] && !commonElements.includes(this[i]) && commonElements.push(this[i])
-        }
+        const current = array[i];
+        this.includes(current) && !commonElements.includes(current) && commonElements.push(current);
     }
     return commonElements;
 }
