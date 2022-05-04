@@ -1,3 +1,5 @@
+//HINT: You can do this using multi pointer approach and using RegEx 
+
 
 //String check for aplabetics
 String.prototype.checkIfString = function() {
