@@ -1,6 +1,9 @@
 const array1= [1, 2, 2, 1,4,5];
 const array2 = [2,2,5];
 
+//Try to do it without include inbuilt JS function
+
+
 // task 1
 function intersection (array1, array2) {
     const commonElements = [];
